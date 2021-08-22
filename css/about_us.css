@@ -19,6 +19,7 @@
 .logo-container {
   font-size: 30px;
   flex: 1;
+  
 }
 a:hover
   {
@@ -30,6 +31,7 @@ a:hover
 .logo {
   font-size: 30px;
   color: #4dbf00;
+
 }
 #headerlogo {
   flex: 1;
@@ -186,17 +188,28 @@ body {
 
  footer{
   width: 100%;
-  height: 50px;
+  height: 70px;
   background-color: black;
   position: sticky;
   top: 0;
   color: white;
   margin-right: 30px;
   font-weight: bold;
+  display: inline-block;
   
  }
-#logo{
-  float:right;
-  margin-right: 30px;
-  
+#logoo{
+ 
+display: inline-block;
+ float:right;
+ margin-right: 30px;
+ 
 }
+
+ #footerlogo {
+ padding-top: 10px;
+ display: inline-block;
+ font-size: 30px;
+ font-family: "Sen", sans-serif;
+ color:#4dbf00 ;
+ }
