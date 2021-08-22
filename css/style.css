@@ -28,7 +28,7 @@ header div#topHeaderLinks a:hover
 {
   background-color: gold;
   color: black;
-  padding-top: 30px;
+  padding-top: 40px;
   font-weight: bold;
 }
 
@@ -97,3 +97,5 @@ For Header slide show
     from {opacity: .4}
     to {opacity: 1}
   } 
+
+  
