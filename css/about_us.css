@@ -1,0 +1,202 @@
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+
+}
+.logo-container {
+  font-size: 30px;
+  flex: 1;
+}
+a:hover
+  {
+      background-color: green;
+      color: black;
+      padding: 10px;
+      font-weight: bold;
+  }
+.logo {
+  font-size: 30px;
+  color: #4dbf00;
+}
+#headerlogo {
+  flex: 1;
+  font-size: 30px;
+  color: #4dbf00;
+}
+
+
+
+#headerlinks{
+  flex: 6;
+}
+
+#headerUnorderList{
+  display: flex;
+  list-style: none;
+}
+
+li a{
+  
+  color: #4dbf00;
+  margin-right: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+ *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color:#151515;
+  background-attachment: fixed;
+  
+}
+
+
+
+.content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+
+
+
+ .description {
+  width: 100%;
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+
+.card {
+  color: inherit;
+  cursor: pointer;
+  width: calc(33% - 2rem);
+  min-width: calc(33% - 2rem);
+  height: 400px;
+  min-height: 400px;
+  perspective: 1000px;
+  margin: 1rem;
+  position: relative;
+}
+/* to make my website avalible on all brawser */
+/* @media screen and (max-width: 800px) {
+  .card {
+    width: calc(50% - 2rem);
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+} */
+
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+}
+
+.front {
+  background-size: cover;
+  padding: 2rem;
+  font-size: 1.618rem;
+  font-weight: 600;
+  
+  overflow: hidden;
+  font-family: Poppins, sans-serif;
+}
+.front:before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #EDEDED, #DA0037);
+  opacity: 0.25;
+  z-index: -1;
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+}
+.card:nth-child(even):hover .front {
+  transform: rotateY(-180deg);
+}
+
+.back {
+  
+  color:white;
+  transform: rotateY(-180deg);
+  padding: 0 2em;
+}
+.fa.fa {
+  padding-top: 15px;
+  color: white;
+  
+
+}
+.fab, .far{
+  color: white;
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+ h2{
+   font-size:x-large;
+ }
+
+ footer{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  color: white;
+  margin-right: 30px;
+  font-weight: bold;
+  
+ }
+#logo{
+  float:right;
+  margin-right: 30px;
+  
+}
