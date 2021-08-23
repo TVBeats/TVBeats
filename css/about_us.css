@@ -1,7 +1,7 @@
 
 .navbar {
   width: 100%;
-  height: 50px;
+  height: 80px;
   background-color: black;
   position: sticky;
   top: 0;
@@ -23,20 +23,20 @@
 }
 a:hover
   {
-      background-color: green;
-      color: black;
+      background-color: #DA0037;
+      color: white;
       padding: 10px;
       font-weight: bold;
   }
 .logo {
   font-size: 30px;
-  color: #4dbf00;
+  color: #DA0037;
 
 }
 #headerlogo {
   flex: 1;
   font-size: 30px;
-  color: #4dbf00;
+  color: #DA0037;
 }
 
 
@@ -52,7 +52,7 @@ a:hover
 
 li a{
   
-  color: #4dbf00;
+  color: #DA0037;
   margin-right: 30px;
   font-weight: bold;
   text-decoration: none;
@@ -68,7 +68,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color:#151515;
+  background-color:#1a1919;
   background-attachment: fixed;
   
 }
@@ -98,7 +98,7 @@ body {
 .card {
   color: inherit;
   cursor: pointer;
-  width: calc(33% - 2rem);
+  width: calc(30% - 2rem);
   min-width: calc(33% - 2rem);
   height: 400px;
   min-height: 400px;
@@ -128,8 +128,8 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -168,6 +168,7 @@ body {
   color:white;
   transform: rotateY(-180deg);
   padding: 0 2em;
+  background-color: #DA0037;
 }
 .fa.fa {
   padding-top: 15px;
@@ -210,5 +211,5 @@ display: inline-block;
  display: inline-block;
  font-size: 30px;
  font-family: "Sen", sans-serif;
- color:#4dbf00 ;
+ color:#DA0037 ;
  }
