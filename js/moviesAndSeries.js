@@ -1,4 +1,5 @@
 'use strict';
+
 window.onload = function(){
 	//cart box
 	const iconShopping = document.querySelector('.iconShopping');
@@ -69,33 +70,9 @@ window.onload = function(){
 	cardBoxTable.innerHTML = tableData;
 }
 
-// let userNamee = [];
-// function ADD (userName , number ,  email)
-// {
-//   this.userName = userName
-//   this.number = number
-//   this.email = email
-
-//   userNamee.push(this)
-// }
-
-
-// let formEl = document.getElementById('form')
-// formEl.addEventListener('submit' ,showResult)
-
-// function showResult(event)
-// {
-//   event.preventDefault();
-//   let userName = event.target.userName.value;
-//   let number = event.target.number.value;
-//   let email = event.target.email.value;
-//   let newUser = new ADD (userName,number,email )
-//   formEl.reset();
-//   let ulEl= document.createElement('ul')
-// let liEl =document.createElement('li')
-// ulEl.appendChild(liEl)
-// liEl.textContent = `Hello Mr.${this.userName} , Your Number is ${this.number} , Your Email ${this.email}`;
-// }
+function myFunction() {
+	alert("Thanks for choosing our website");
+  }
 
 
 

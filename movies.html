@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/moviesAndSeries.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Movie's Page</title>
     <script>
-		
-		function Delete(e){
-			let items = [];
-			JSON.parse(localStorage.getItem('items')).map(data=>{
-				if(data.id != e.parentElement.parentElement.children[0].textContent){
-					
-					items.push(data);
+        // delet cart
+        function Delete(e) {
+            let items = [];
+            JSON.parse(localStorage.getItem('items')).map(data => {
+                if (data.id != e.parentElement.parentElement.children[0].textContent) {
 
-				}
-			});
-			localStorage.setItem('items',JSON.stringify(items));
-			window.location.reload();
-		};
-	</script>
+                    items.push(data);
+
+                }
+            });
+            localStorage.setItem('items', JSON.stringify(items));
+            window.location.reload();
+        };
+    </script>
 </head>
+
 <body>
-       <div class="main">
+    <div class="main">
         <header id="header" class="header">
 
             <h1>TVBEATS</h1>
@@ -35,147 +38,178 @@
             </div>
             <div class="iconShopping">
                 <p>0</p>
-				<i class="fa fa-shopping-cart"></i>
-            </div> 
-            <!-- for slideshow images     -->
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+            <!-- slide show in header -->
         </header>
 
-        <!-- for add movie to the list  -->
+        <main>
+            <!-- for add movie to the list  -->
+            <div class="itemsBox">
+                <div class="item">
+                    <img src="images/Movie/Postar/American Made.jpg" alt="" width="350" height="400">
+                    <div class="itemInfo">
+                        <h1>American Made</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/American Psycho.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>American Psycho</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/Breaking News in Yuba County.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Breaking News in Yuba County</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/Die in a Gunfight.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Die in a Gunfight</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/dune.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>dune</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/Fatherhood.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Fatherhood</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/Hell.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Hell</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/In Bruges.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>In Bruges</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/Old.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Old</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/pig.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>pig</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/Spenser Confidential.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Spenser Confidential</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/The Old Man & the Gun.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>The Old Man & the Gun</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/The Worst Person in the World.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>The Worst Person in the World</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/Trollhunters.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Trollhunters</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Movie/Postar/War Dogs.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>War Dogs</h1>
+                        <p><span>10$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
 
-        <div class="itemsBox">
-            <div class="item">
-                <img src="images/Movie/Postar/American Made.jpg" alt="" width="350" height="400">
-                <div class="itemInfo">
-                    <h1>American Made</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
             </div>
-            <div class="item">
-                <img src="images/Movie/Postar/American Psycho.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>American Psycho</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/Breaking News in Yuba County.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Breaking News in Yuba County</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/Die in a Gunfight.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Die in a Gunfight</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/dune.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>dune</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/Fatherhood.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Fatherhood</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/Hell.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Hell</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/In Bruges.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>In Bruges</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/Old.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Old</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/pig.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>pig</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/Spenser Confidential.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Spenser Confidential</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/The Old Man & the Gun.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>The Old Man & the Gun</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/The Worst Person in the World.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>The Worst Person in the World</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/Trollhunters.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Trollhunters</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Movie/Postar/War Dogs.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>War Dogs</h1>
-                    <p><span>10$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            
-        </div>
-       </div>
-       <div class="cartBox">
-           <div class="cart">
+    </div>
+    <div class="cartBox">
+        <div class="cart">
             <i class="fa fa-close"></i>
             <h1>Cart</h1>
-			<table>
+            <table>
 
             </table>
-           </div>
-
-       </div> 
-<script src="js/moviesAndSeries.js"></script>
+            <form id="form-for-new-shop">
+                <fieldset>
+                    <legend>Cart info</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber">
+                    <button id="confirmBtn" onclick="myFunction()">Confirm</button>
+                </fieldset>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div>
+            <img src="images/logos/TvBeats-logos_black2.png" alt="TvBeatsLogo" width="150px" height="35px">
+            <p>&copy TVBeats</p>
+        </div>
+        <div>
+            <a href="">About Us</a>
+        </div>
+        <div>
+            <p>Find Us On</p>
+            <br>
+            <a href="link"><i class="fa fa-facebook"></i></a>
+            <a href="link"><i class="fa fa-twitter"></i></a>
+            <a href="link"><i class="fa fa-instagram"></i></a>
+            <br>
+        </div>
+    </footer>
+    <script src="js/moviesAndSeries.js"></script>
 </body>
+
 </html>

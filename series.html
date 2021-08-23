@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/moviesAndSeries.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Series's Page</title>
     <script>
-		
-		function Delete(e){
-			let items = [];
-			JSON.parse(localStorage.getItem('items')).map(data=>{
-				if(data.id != e.parentElement.parentElement.children[0].textContent){
-					
-					items.push(data);
 
-				}
-			});
-			localStorage.setItem('items',JSON.stringify(items));
-			window.location.reload();
-		};
-	</script>
+        function Delete(e) {
+            let items = [];
+            JSON.parse(localStorage.getItem('items')).map(data => {
+                if (data.id != e.parentElement.parentElement.children[0].textContent) {
+
+                    items.push(data);
+
+                }
+            });
+            localStorage.setItem('items', JSON.stringify(items));
+            window.location.reload();
+        };
+    </script>
 </head>
+
 <body>
-       <div class="main">
+    <div class="main">
         <header id="header" class="header">
 
             <h1>TVBEATS</h1>
@@ -35,160 +38,179 @@
             </div>
             <div class="iconShopping">
                 <p>0</p>
-				<i class="fa fa-shopping-cart"></i>
-            </div> 
+                <i class="fa fa-shopping-cart"></i>
+            </div>
             <!-- for slideshow images     -->
         </header>
 
-        <!-- for add movie to the list  -->
+        <main>
+            <!-- for add movie to the list  -->
+            <div class="itemsBox">
+                <div class="item">
+                    <img src="images/Series/Postar/Band of Brothers.jpg" alt="" width="350" height="400">
+                    <div class="itemInfo">
+                        <h1>Band of Brothers</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Breaking Bad.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Breaking Bad</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Chernobyl.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Chernobyl</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Dark.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Dark</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Dexter.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Dexter</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Game of Thrones.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Game of Thrones</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Hannibal.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Hannibal</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/La casa de.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>La casa de</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Lucifer.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Lucifer</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Mr. Robot.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Mr. Robot</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Peaky Blinders.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Peaky Blinders</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/Sherlock.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>Sherlock</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/The Blacklist.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>The Blacklist</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/The Queen's Gambit.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>The Queen's Gambit</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/Series/Postar/True Detective.jpg" alt="" width="320" height="350">
+                    <div class="itemInfo">
+                        <h1>True Detective</h1>
+                        <p><span>20$</span></p>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                    </div>
+                </div>
 
-        <div class="itemsBox">
-            <div class="item">
-                <img src="images/Series/Postar/Band of Brothers.jpg" alt="" width="350" height="400">
-                <div class="itemInfo">
-                    <h1>Band of Brothers</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
             </div>
-            <div class="item">
-                <img src="images/Series/Postar/Breaking Bad.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Breaking Bad</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/Chernobyl.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Chernobyl</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/Dark.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Dark</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/Dexter.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Dexter</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/Game of Thrones.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Game of Thrones</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/Hannibal.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Hannibal</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/La casa de.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>La casa de</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/Lucifer.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Lucifer</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/Mr. Robot.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Mr. Robot</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/Peaky Blinders.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Peaky Blinders</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/Sherlock.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>Sherlock</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/The Blacklist.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>The Blacklist</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/The Queen's Gambit.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>The Queen's Gambit</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            <div class="item">
-                <img src="images/Series/Postar/True Detective.jpg" alt="" width="320" height="350">
-                <div class="itemInfo">
-                    <h1>True Detective</h1>
-                    <p><span>20$</span></p>
-                    <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
-                </div>
-            </div>
-            
-        </div>
-       </div>
-       <div class="cartBox">
-           <div class="cart">
+    </div>
+    <div class="cartBox">
+        <div class="cart">
             <i class="fa fa-close"></i>
             <h1>Cart</h1>
-			<table>
+            <table>
 
             </table>
-            <!-- <form action="" id="form">
-                
-                    <legend>Enter Your Information</legend>
-                    <label for="Name">Name:</label>
-                    <input type="text" name="userName" id="Name">
-                    <label for="Phone">Phone</label>
-                    <input type="text" name="number" id="Phone">
-                    <label for="Email">Email:</label>
-                    <input type="text" id="Email" name="email">
-
-                    <input type="submit" value="Buy">
-                
-            </form> -->
-           </div>
-
-       </div> 
-<script src="js/moviesAndSeries.js"></script>
+            <form id="form-for-new-shop">
+                <fieldset>
+                    <legend>Cart info</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber">
+                    <button id="confirmBtn" onclick="myFunction()">Confirm</button>
+                </fieldset>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div>
+            <img src="images/logos/TvBeats-logos_black2.png" alt="TvBeatsLogo" width="150px" height="35px">
+            <p>&copy TVBeats</p>
+        </div>
+        <div>
+            <a href="">About Us</a>
+        </div>
+        <div>
+            <p>Find Us On</p>
+            <br>
+            <a href="link"><i class="fa fa-facebook"></i></a>
+            <a href="link"><i class="fa fa-twitter"></i></a>
+            <a href="link"><i class="fa fa-instagram"></i></a>
+            <br>
+        </div>
+    </footer>
+    </div>
+    <script src="js/moviesAndSeries.js"></script>
 </body>
+
 </html>
