@@ -4,97 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/seriesCss/BreakingBad.css">
+    <script src="https://kit.fontawesome.com/ff66458417.js" crossorigin="anonymous"></script>
+
     <title>Breaking Bad</title>
 </head>
 <body>
 
+    <!-- the header -->
     <header>
-        <div id="logohea">
-            <a href="/index.html"><img src="/seriesImages/TvBeats-logos_black.png" alt=""></a>
+        <div class="menu-container">
+            <ul class="menu-list">
+                
+                
+                <li class="menu-list-item"> <a href="index.html">Home</a> </li>
+                <li class="menu-list-item"> <a href="movies.html">Movies</a></li>
+                <li class="menu-list-item"> <a href="series.html">Series</a> </li>
+                
+            </ul>
         </div>
-        <div id="headerLinks">
-            <a href="">movie</a>
-            <a href="">series</a>
-            <a href="">home</a>
-        </div>
+        
     </header>
-
     <main>
-        <!-- main image -------------------- -->
-        <div id="img">
-            <img src="https://m.media-amazon.com/images/I/51fWOBx3agL._AC_.jpg" alt="">
-           
+        <!-- the content and the trailer and the logo in banner -->
+        <div class = "banner">
+            <div class="content">
+                <!-- the name -->
+                <h2> <span>Breaking Bad</span></h2>
+                <!-- the story -->
+                <p> A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.
+
+                </p>
+                <!-- trailer link -->
+                <a href="https://www.youtube.com/embed/HhesaQXLuRY" id="trailer" class = "play" > <i class="far fa-play-circle"></i> Watch Trailr</a>
+                <div class = "slide"></div>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
         </div>
-
-        <!-- info ------------------- -->
-        <div id="info">
-            <div id="name">
-                <p>Name: Breaking Bad</p>
-            </div>
-            <div id="year">
-               <p>Year: 2008</p>
-            </div>
-            <div id="tybe">
-                <p>Crime Drama Thriller</p>
-            </div>
-        </div>
         
-        
-           
-        
-
-        <!-- the rating ------------------- -->
-        <div id="rate">
-            <a href="/index.html"><img src="/seriesImages/ibmdlogo.png" alt="" id="imbd"></a>
-        <a href="https://www.imdb.com/title/tt0903747/?ref_=nv_sr_srsg_0">
-        <div class="RatingBarButtonBase__ButtonContentWrap-sc-15v8ssr-3 jodtvN">
-            <div class="RatingBarButtonBase__IconWrapper-sc-15v8ssr-4 dwhzFZ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="ipc-icon ipc-icon--star AggregateRatingButton__RatingIcon-sc-1ll29m0-4 iAOIoP" viewBox="0 0 24 24" fill="currentColor" role="presentation" style="color: yellow;">
-                    <path d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.1 4.72c-.2.86.73 1.54 1.49 1.08l4.15-2.5z">
-
-                    </path>
-                </svg>
-            </div>
-            <div class="AggregateRatingButton__ContentWrap-sc-1ll29m0-0 hmJkIS">
-                <div data-testid="hero-rating-bar__aggregate-rating__score" class="AggregateRatingButton__Rating-sc-1ll29m0-2 bmbYRW">
-                        <span class="AggregateRatingButton__RatingScore-sc-1ll29m0-1 iTLWoV">9.4</span>
-                        <span>/<!-- -->10</span>
-                    </div>
-            <div class="AggregateRatingButton__DotSeparator-sc-1ll29m0-5 fKXaGo">
-        </div>
-    </div>
-    </div>
-    </a>
-    </div>
-    <!-- tralier ------------------------ -->
-
-    <iframe src= "https://www.youtube.com/embed/HhesaQXLuRY" id="trailer">
-    </iframe>
-        
-    
-    <!-- discription ------------------------ -->
-    <div id="story">
-
-        
-        <p></p>
-    </div>
-    <!-- actors ------------------------ -->
-
-    <div id="actors">
-        <a href="https://www.imdb.com/name/nm0186505/?ref_=tt_cl_i_1"><img src="/seriesActors/brayn cranston.jpg" alt=""></a>
-        <a href="https://www.imdb.com/name/nm0348152/?ref_=tt_cl_i_3"><img src="/seriesActors/anna gun.jpg" alt=""></a>
-        <a href="https://www.imdb.com/name/nm0666739/?ref_=tt_cl_i_2"><img src="/seriesActors/aaron paul.jpg" alt=""></a>
-    </div>
-
+        </div> 
     </main>
-    <!-- footer------------------------------------- -->
-    <footer>
-        <div id="icons">
-            <img src="/seriesImages/insta-icon.png" alt="">
-            <img src="/seriesImages/twit-icon.png" alt="">
-            <img src="/seriesImages/fb-icon.png" alt="">
-        </div>
-    </footer>
-
+    <footer></footer>
+    
 </body>
 </html>
