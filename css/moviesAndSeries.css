@@ -83,21 +83,6 @@ body div.main header h1
 	padding: 5px 5px;
 	border-radius: 50%;
 }
-.main header .iconFavorite{
-	cursor: pointer;
-	z-index: 1;
-	position: relative;
-	font-size: 1.8rem;
-}
-.main header .iconFavorite p{
-	position: absolute;
-	top: -5px;
-	right: -12px;
-	font-size: 0.69rem;
-	background-color: #000;
-	padding: 5px 5px;
-	border-radius: 50%;
-}
 .main .header .slideShow{
     position: absolute;
 	width: 100%;
@@ -155,7 +140,8 @@ body div.main header h1
 }
 .main .itemsBox .item a{
 	position: relative;
-	text-align: left;
+	text-align: center;
+	margin-left: 10px ;
 	font-size: 22px;
 	font-weight: lighter;
 	padding: 10px 0;
@@ -165,11 +151,13 @@ body div.main header h1
 	color: white;
 	padding: 10px 15px;
 	text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 25px;
 }
 .main .itemsBox .item a:hover{
 	background: white;
 	color: black;
 	border-color: #FF005C;
+	border-radius: 25px;
 }
 
 /*cart box*/
@@ -295,6 +283,9 @@ table{
       {
         background-color: #26001B;
         text-align: left;
+		width: 100%;
+        position: relative;
+        bottom: 0%;
       }
       footer p
       {

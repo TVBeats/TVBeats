@@ -70,8 +70,9 @@ window.onload = function(){
 	cardBoxTable.innerHTML = tableData;
 }
 
+// alert on confirm 
 function myFunction() {
-	alert("Thanks for choosing our website");
+	alert('Thanks for your purchase from our website');
   }
 
 
