@@ -2,7 +2,7 @@ i.fa.fa{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'poppins',sans-serif; */
+   
 }
 /* this is for the logo in the header */
 header{
@@ -16,6 +16,42 @@ header{
     padding: 40px 100px;
     z-index: 1000;
 }
+.menu-container{
+    position:absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.menu-container li{
+    list-style: none;
+
+}
+
+.menu-list-item{
+    padding-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+.menu-container li a {
+    text-decoration: none;
+    
+     
+ }
+ 
+ .menu-container li a {
+   filter: invert(1);
+   transform: scale(0.9);
+  
+  color: #000;
+      
+  } 
+
 header .logo{
     max-width: 120px;
 
@@ -34,7 +70,7 @@ header .logo img,header .toggle img{
     width: 100%;
     min-height:100vh ;
     padding: 0 50px;
-    background:url(/images/Movie/Postar/American\ Psycho.jpg) ;
+    background:url(/images/Movie/imagesforMovies/Die\ in\ a\ Gunfight.jpg) ;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -42,6 +78,8 @@ header .logo img,header .toggle img{
     align-items: center;
 
 }
+
+
 .banner .content{
 max-width: 550px;
 
@@ -116,7 +154,7 @@ max-width: 550px;
      left: calc(50% - 250px / 2);
      width: 250px;
      height: 150px;
-     background: url(/images/Movie/Postar/American\ Psycho.jpg);
+     background: url(/images/Movie/Postar/Die\ in\ a\ Gunfight.jpg);
      background-size:cover;
      cursor: pointer;
      animation: animate 25s linear infinite;
@@ -152,35 +190,23 @@ max-width: 550px;
 
 
     }
-    /* need js */
-    /* .trailer.active{
-        visibility: visible;
-        opacity:1;
-    } */
+    
     .trailer video{
         max-width: 900px;
         outline: none;
         
 
     }
-    /* i need to add img to exit */
-    /* .trailer .close{
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        cursor: pointer;
-        filter: invert(1);
-        max-width: 32px;
-    } */
+    
 
     /* for brawser screen */
     @media (max-width:991px) {
         header{
             padding: 20px 50px;
         }
-        header .logo{
+        /* header .logo{
           max-width: 80px;
-        }
+        } */
         header .toggle{
             max-width: 40px;
         }
@@ -197,5 +223,3 @@ max-width: 550px;
         }
         
     }
-
-
