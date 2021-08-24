@@ -4,105 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/moviesPagesCss/old.css">
     <script src="https://kit.fontawesome.com/ff66458417.js" crossorigin="anonymous"></script>
-    <title>Movies</title>
+
+    <title>Old  </title>
 </head>
 <body>
 
+    <!-- the header -->
     <header>
-        <div> 
-            <nav>
-            <!--Logo-->
-            <div id = "logohea"><img src="" alt="logo"></div>
-    
-            <!--Nav Bar-->
-            <div id = "headerLinks">
-            <a href="">Home</a>
-            <a href="">Series</a>
-            <a href="">Movies</a>
-            </div>
-
-            </nav>
-        </div>
-    </header>
-
-    <main>
-       
-        <div>
-            <div id = "img">
-                  <img src="https://m.media-amazon.com/images/M/MV5BZGMxYmI2MDAtMjZlMC00YjQyLTljNGYtOGI0YmMwOGE3YWNiXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX67_CR0,0,67,98_AL_.jpg" align="left">
-            </div>   
-
-            <div id = "watch">
-                  <a href=""> Watch</a>
-            </div>
-
-        </div>
-
-        <div>
-
-            <div id = "name">
-                <b> Old </b> 
-            </div>
-
-            <div id = "year">
-                <b> 2021 </b> 
-            </div>
-
-            <div id = "tybe">
-                <b>  Drama, Mystery, Thriller </b> 
-            </div>
-
-            <div id = "rate">
-                <b>  5.9/10 </b> 
-            </div>
-
-            <div id = "imdb">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX1xRgAAAD+zBn5yBhpVQrGnxPgtBb4xxiRdA5QQAgOCwGtixFTQwj8yxnTqhWMcQ7rvRd0XQu1khE5LgZmUgphTgnLoxQyKAU7LwaHbA1IOgeXeQ//0xrwwRjmuRfBmxNENwajgxAYEwJ+ZQzQpxS6lhJ3Xwyefw+ohxAsIwQdGANcSgkhGwOwjhGCaQ0nHwR6R0fmAAAEu0lEQVR4nO2b6XqqOhhGTaLEtjvWobZ1ALTa+dje/90diRXIoJvsAFKed/3CJMK3GBIy0OkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADABaAaTKYKPTlBHP9zJpfZso4lBOPKsfX9iE4FRJ9dhekuURSzu67B3ehg3+FmXkISH4un9kzJ1zr4OYMHQf0oU2YL0Q8eEI3bJFA615MlP38KrZmEJoY39ryUhzFNryO90nMruIimYV9Yjy0ZyOD4wJp5XciQkNXweKXon8YZPsvYWOxlSEjAGmu4kBGwtachCXlTDUcyAjHzNfxDm2q4kpHRqa8hiVlDDcnB8MHbcE6bajhMHiBqz3MxJBFvqGHSXPCoBENZKzfRcMxONoduhq+ioYZJc8GenQxv4p2l7u031fBlnylenQwHgtHwSU+9baphUgeKjZvh/tEVb7/G8InZ4vqrIbv/NYYk3Oe9Oxue6sGcMOQsgZ+LuzrDJN4TWecMhw6GjEbxbv02HnBahqSr4Zidag7PGXaKGzL2Njn+GgW0fsOFMJ+pMg1pT6l2N9z7MroadgUbV2i41Fuih9BX0dVwRcWiQsO1sddvT0FnQ0LFKN3+KN3Qwp3ns1jM8OM63YxyWepwVUWGpOc3AFfMcJU1gdtluvl+V4vh3O8iFjTMevW7rHd41a3FkARelU1Bw6x30M+aw01Nhjdet2kxw8cs7tE23VxUYPj59WmkzbzeVosZTrJWfpX1Dp/Lfw4jKqgR0Usdhtmt+XSbxV6+YbIL2tUSRzUYPuQGn7KohuqoYjnvpfvOpP5KUYvh8kMvtmdZjaExpF6Pofn8k/+qMtxdxPDLNPysylB/ta/HcG0afrXKkPZMw9d2GRrFCIlpqwwtE9uDdhnSb8MwbJPhhJpzhk+sXYbmvO9Kt/7lhswYlx+JlhkazUW/ZYZmuTGj5fctLmhoTm1vedsM9fmYqHWGenOxT2qXobhVi727GJqzOQ001EOfOhm6zB9ezFCbcpoJB0OnOeBLGeo32htzMTSWbzStjz9JgleL9VwMRd/FUH99qsuQTpSkgBc35ObU/7mxNn0OsS5DoQ5jJoUKGQaUBvoI6HlDrdauz1A58Lcwhm5PGM5X13oS+VmLaxkRZowtVxcwfKR6BXBFixraWdtX7s3H29joiW5qMuTbfMqm8DW0c283tNKvy1BpLpK7THgYyoMXNIzrmF2TMyb5lGR9qIfhy4k1wlZCH0Enw3wNIFu5fzeUS4QLGo7qmOWWhorQUE9wMjx81VDQMPJbUeNimJ/1MpRdDI8LSAzDiWWN/NqrnnEyzL8RT3wM0/bNMNyYa+ZefJe2ORjmmwv5ndo/Gt6kMRuGYxpoq4ln3mv3TvXc1PeKd3mcUCsktLZZGhqjjiqPr53srjO+kIs46+Tn8b57JSxODOOeily9wrdK2v3hYU9/x4dCA/WfTJ4xfX95tqHyEaV2lF5PfoQRLX5ObzcWpXyPyDQOMtyS1jlfiNnSbPvOKWr5h0RBxTCI9iejgu8tm4P/ulIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZ/kfV59xgQ6j6wsAAAAASUVORK5CYII=" align="left">
-            </div>
-
-        </div>
-
-        <div>
-
-            <div id = "trailer">
-                <iframe width="420" height="315"
-                src="../trailer/old.mp4">
-                </iframe>
-            </div>
-
-            <div id = "story">
-                A family on a tropical holiday discovers that the secluded beach where they are relaxing for a few hours is somehow causing them to age rapidly reducing their entire lives into a single day.
-            </div>
-
-            <div id = "actors">
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5QXy3Fwe3rgbtKNpS0O_qHJqYxwoX6EBuuzMsYopoDn9pqNqt" align="left">
-                 Director : M.night shyamalan
-                <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDDHmgDmZ4peDDU-A995soEsYzHB05svTsICSAXcuBS1ZkvvFd">
-                 alex wolff
-                <img src= "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeUOOw1RIXLnwr6d2EjMX_eeIo4w2hLVdLlsNhOBpyGibuZT8W">
-                Rufus Sewell    
-            </div>
-
-        </div>
-
-    </main>
-
-    <footer>
-        <!--Logo-->
-        <div id = "logofooter"><img src="" alt="logo"></div>
-
-        <!--Social media icons-->
-        <div id="icons">
-            <ul>
-              <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-              <a href="https://www.instagram.com/"> <i class="fa fa-instagram"></i></a>
-              <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <div class="menu-container">
+            <ul class="menu-list">
+                
+                
+                 
+                <li class="menu-list-item"> <a href="../index.html">Home</a> </li>
+                <li class="menu-list-item"> <a href="../movies.html">Movies</a></li>
+                <li class="menu-list-item"> <a href="../series.html">Series</a> </li>
+                
             </ul>
         </div>
         
-    </footer>
-
+    </header>
+    <main>
+        <!-- the content and the trailer and the logo in banner -->
+        <div class = "banner">
+            <div class="content">
+                <h2> <span>Old  </span></h2>
+                <p> A family on a tropical holiday discovers that the secluded beach where they are relaxing for a few hours is somehow causing them to age rapidly reducing their entire lives into a single day.</p>
+                <a href="../trailer/old.mp4" class = "play" > <i class="far fa-play-circle"></i> Watch Trailr</a>
+                <div class = "slide"></div>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        </div> 
+    </main>
+    <footer></footer>
     
 </body>
 </html>
