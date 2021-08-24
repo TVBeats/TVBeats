@@ -5,90 +5,326 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/moviesAndSeries.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>movies</title>
+    <link rel="stylesheet" href="css/animationForMAndS.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Movie's Page</title>
+    <script>
+        // delet cart
+        function Delete(e) {
+            let items = [];
+            JSON.parse(localStorage.getItem('items')).map(data => {
+                if (data.id != e.parentElement.parentElement.children[0].textContent) {
+
+                    items.push(data);
+
+                }
+            });
+            localStorage.setItem('items', JSON.stringify(items));
+            window.location.reload();
+        };
+    </script>
 </head>
 
 <body>
-    <header>
-        <!-- header top -->
-        <div id="topHeader">
-            <div id="topHeaderLogo">
-                <img src="images/logos/TvBeats-logos_black2.png" alt="TvBeatsLogo" width="150px" height="35px">
-                <a href="https://www.imdb.com/?ref_=nv_home"><img src="images/logos/2560px-IMDB_Logo_2016.svg.png"
-                        alt="imdblogo" width="75px" height="35px"></a>
-            </div>
-            <div id="topHeaderLinks">
-                <a href="index.html">Home page</a>
-                <a href="movies.html">Movies</a>
-            </div>
-        <!-- slide show in header -->
-        <div class="w3-content w3-section" style="max-width:100%">
-            <img class="mySlides"
-                src="https://filmschoolrejects.com/wp-content/uploads/2021/07/Old-Ending-Explained.jpg"
-                style="width:100%">
-            <img class="mySlides"
-                src="https://s3-us-west-2.amazonaws.com/markandtoddcast/assets/2021/07/20024224/Pig-poster-1-e1623947993373-1.jpeg"
-                style="width:100%">
-            <img class="mySlides"
-                src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/07/DUNE.jpg?q=50&fit=contain&w=750&h=375&dpr=1.5"
-                style="width:100%">
-            <img class="mySlides"
-                src="https://i1.wp.com/thefutureoftheforce.com/wp-content/uploads/2021/07/Troll-Hunters-Rise-of-the-Titans-Review-.jpg?fit=1920%2C1080&ssl=1"
-                style="width:100%">
-            <img class="mySlides" src="https://www.letsott.com/assets/uploads/posts/Fatherhood_H.jpg" style="width:100%"
-                style="height:500px">
-            <img class="mySlides"
-                src="https://m.media-amazon.com/images/M/MV5BMzE5NDgxZTItYzhjOC00MDJmLWI3MGMtNjdhNmIxNDU0YTQ4XkEyXkFqcGdeQXVyMTI0MjI0NTc0._V1_.jpg"
-                style="width:100%">
-            <img class="mySlides"
-                src="https://www.comingsoon.net/assets/uploads/2021/01/breaking-news-in-yuba-county-poster-e1610570326909-1280x720.jpg"
-                style="width:100%" style="height:500px">
-            <img class="mySlides"
-                src="https://i1.wp.com/www.mobi-racer.com/wp-content/uploads/2021/06/Die-in-a-Gunfight-2021.jpg?fit=1170%2C658&ssl=1"
-                style="width:100%" style="height:500px">
-            <img class="mySlides"
-                src="https://occ-0-1068-1723.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABfsyjdUpqdBZSnDBBBnas7H67irt7RmGIg8Wp6vgYmsSt8wsh1FwgtntOxFFnxakMu0eulQVxFQ-R7FVHKipMNxOuhh5.jpg?r=9f3"
-                style="width:100%">
-            <img class="mySlides"
-                src="https://static.metacritic.com/images/products/movies/8/cccb1b62d46eec0f1dcda10d6a20addc.jpg"
-                style="width:100%">
-            <img class="mySlides" src="https://i.ytimg.com/vi/weHLDffhXzs/maxresdefault.jpg" style="width:100%">
-            <img class="mySlides" src="https://www.elgrafico.mx/sites/default/files/2017/07/17/cochiloco.jpg"
-                style="width:100%">
-            <img class="mySlides"
-                src="https://www.assignmentx.com/wp-content/uploads/2017/09/AMERICAN-MADE-movie-poster.jpg"
-                style="width:100%">
-            <img class="mySlides"
-                src="https://olamovies.us/wp-content/uploads/2021/06/The-Art-of-Self-Defense-2019-Bluray-Google-Drive-Download.jpg"
-                style="width:100%">
-            <img class="mySlides" src="https://cdn.mos.cms.futurecdn.net/WcQ2Kq8aHEqtv6hFYG3nXC.jpg" style="width:100%">
-            <img class="mySlides" src="https://i.ytimg.com/vi/hLQG7_gp6q4/maxresdefault.jpg" style="width:100%">
-        </div>
-    </header>
-    <main>
+    <div class="main">
+        <!-- header -->
+        <header id="header" class="header">
 
+            <h1>TVBEATS</h1>
+            <div id="linkInHeader">
+                <a href="index.html">Home</a>
+                <a href="movies.html">Movie</a>
+            </div>
+            <div class="iconShopping">
+                <p>0</p>
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+            <!-- slide show in header -->
+            <div class="slideShow" style="max-width: 100%;">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Band of Brothers.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Breaking Bad.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Chernobyl.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Dark.jpg" style="width: 100%;" height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Dexter.jpg" style="width: 100%;" height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Game of Thrones.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Hannibal.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/La Casa DePapel.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Lucifer.jpg" style="width: 100%;" height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Mr. Robot.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Peaky Blinders.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Sherlock.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/The Blacklist.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/The Queen's Gambit.png" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/True Detective.jpg" style="width: 100%;"
+                    height="700">
+                <img class="mySlides" src="images/Series/imagesfotSeries/Vikings.jpg" style="width: 100%;" height="700">
+            </div>
+        </header>
+
+        <!-- main -->
+        <main>
+            <!-- for add movie to the list  -->
+            <div class="itemsBox">
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Game of Thrones.jpg" alt="" width="350" height="400">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Game of Thrones</h1>
+                        <p><span>15$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="seriesPages/ GameofThrones.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Band of Brothers.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Band of Brothers</h1>
+                        <p><span>18$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="series.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Breaking Bad.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Breaking Bad</h1>
+                        <p><span>20$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="seriesPages/BreakingBad.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Chernobyl.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Chernobyl</h1>
+                        <p><span>12$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="seriesPages/Chernobyl .html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Dark.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Dark</h1>
+                        <p><span>14$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="series.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Dexter.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Dexter</h1>
+                        <p><span>10$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="seriesPages/Dexter.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Hannibal.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Hannibal</h1>
+                        <p><span>7$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="series.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/La casa de.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>La casa de</h1>
+                        <p><span>25$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="series.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Mr. Robot.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Mr. Robot</h1>
+                        <p><span>10$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="series.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Peaky Blinders.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Peaky Blinders</h1>
+                        <p><span>10$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="seriesPages/PeakyBlinders.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Sherlock.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Sherlock</h1>
+                        <p><span>10$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="seriesPages/Sherlock.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/The Blacklist.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>The Blacklist</h1>
+                        <p><span>10$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="seriesPages/TheBlacklist.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/The Queen's Gambit.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>The Queen's Gambit</h1>
+                        <p><span>10$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="series.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/True Detective.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>True Detective</h1>
+                        <p><span>10$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="series.html">more info</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="imgBx">
+                        <img src="images/Series/Postar/Vikings.jpg" alt="" width="320" height="350">
+                    </div>
+                    <div class="itemInfo">
+                        <h1>Vikings</h1>
+                        <p><span>10$</span></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quibusdam odio sint, quo
+                            error doloribus iusto cumque voluptates tempora quos dolore nemo cum quod, dicta, omnis
+                            impedit! Ducimus, vitae dolores?</p><br><br>
+                        <a href="#" title="add to cart" class="attToCart">Add To Cart</a>
+                        <a href="seriesPages/Vikings.html">more info</a>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    <div class="cartBox">
+        <div class="cart">
+            <i class="fa fa-close"></i>
+            <h1>Cart</h1>
+            <table>
+
+            </table>
+            <form id="form-for-new-shop">
+                <fieldset>
+                    <legend>Cart info</legend>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber">
+                    <button id="confirmBtn" onclick="myFunction()">Confirm</button>
+                </fieldset>
+        </div>
+    </div>
     </main>
+
+    <!-- footer -->
     <footer>
-        <div>
-            <img src="images/logos/TvBeats-logos_black2.png" alt="TvBeatsLogo" width="150px" height="35px">
-            <p>&copy TVBeats</p>
-        </div>
-        <div>
-            <a href="">About Us</a>
-        </div>
-        <div>
-            <p>Find Us On</p>
-            <br>
-            <a href="link"><i class="fa fa-facebook"></i></a>
-            <a href="link"><i class="fa fa-twitter"></i></a>
-            <a href="link"><i class="fa fa-instagram"></i></a>
-            <br>
-        </div>
+        <p>©TVBEATS TEAM</p>
     </footer>
     <script src="js/moviesAndSeries.js"></script>
+    <script src="js/slideShow.js"></script>
 </body>
 
 </html>

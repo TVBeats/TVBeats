@@ -3,23 +3,23 @@
   }
   a
   {
-      color: green;
+      color: red;
       text-decoration: none;
       font-size: 25px;
 
   }
   a:hover
   {
-      background-color: green;
+      background-color: red;
       color: black;
       padding: 10px;
       font-weight: bold;
   }
 
   body {
-    
     font-family: "Roboto", sans-serif;
-
+    
+    
   }
   
   .navbar {
@@ -45,7 +45,7 @@
   
   .logo {
     font-size: 30px;
-    color: #4dbf00;
+    color: red;
   }
   
   .menu-container {
@@ -117,9 +117,13 @@
   }
   
   .container {
-    background-color: #151515;
+    
     min-height: calc(100vh - 50px);
     color: white;
+    background-image: url("/images/ForBackground/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  background-repeat: no-repeat;
   }
   
   .content-container {
@@ -243,8 +247,12 @@
     cursor: pointer;
   }
   
-  .container.active {
-    background-color: white;
+  .container.active 
+  {
+    background-image: url("/images/ForBackground/lloyd-dirks-4SLz_RCk6kQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   .movie-list-title.active {
