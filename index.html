@@ -9,7 +9,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <script>
+    // delet cart
+    function Delete(e) {
+        let items = [];
+        JSON.parse(localStorage.getItem('items')).map(data => {
+            if (data.id != e.parentElement.parentElement.children[0].textContent) {
+
+                items.push(data);
+
+            }
+        });
+        localStorage.setItem('items', JSON.stringify(items));
+        window.location.reload();
+    };
+</script>
 </head>
 
 <body>
@@ -23,8 +39,12 @@
         <a href="movies.html">Movies</a>
         <a href="series.html">Series</a>
         <a href="about_us.html">About Us</a>
-
+        <div class="iconShopping">
+          <p>0</p>
+          <i class="fa fa-shopping-cart"></i>
       </div>
+      </div>
+      
     </div>
   </header>
 
@@ -115,6 +135,29 @@
       <div class="nav-btn"></div>
     </div>
   </section>
+
+  <div class="cartBox">
+    <div class="cart">
+        <i class="fa fa-close"></i>
+        <h1>Cart</h1>
+        <table>
+
+        </table>
+        <form id="form-for-new-shop">
+            <fieldset>
+                <legend>Cart info</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" name="phoneNumber" id="phoneNumber">
+                <button id="confirmBtn" onclick="myFunction()">Confirm</button>
+            </fieldset>
+    </div>
+</div>
   <!-- <footer>
     <p>©TVBEATS TEAM</p>
   </footer> -->
@@ -157,7 +200,7 @@
       });
     });
   </script>
-
+  <script src="js/moviesAndSeries.js"></script>
 </body>
 
 </html>
