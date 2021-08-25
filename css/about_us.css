@@ -6,7 +6,7 @@ body {
 
 /* animated backgroud */
 body {
-  background: linear-gradient(-45deg, #FF005C,#26001B );
+  background: linear-gradient(-45deg, white,white );
   background-size: 400% 400%;
   animation: gradient 7s ease infinite;
 } 

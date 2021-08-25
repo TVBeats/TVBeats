@@ -6,16 +6,55 @@ i.fa.fa{
 }
 /* this is for the logo in the header */
 header{
+    z-index: 999;
     position: absolute;
-    top:0;
-    left: 0;
+    top: 0;
+    left: 10;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
-    z-index: 1000;
-}
+    padding: 2px 100px;
+    transition: 0.5s ease;
+  }
+  
+  header .brand{
+    color:white;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  header .navigation{
+    right: 50px;
+    position: relative;
+  }
+  
+  header .navigation .navigation-items a{
+    position: relative;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+  }
+  
+  header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+  }
+  
+  header .navigation .navigation-items a:hover:before{
+    width: 100%;
+  }
 .menu-container{
     position:absolute;
     top: 40%;
@@ -138,10 +177,8 @@ max-width: 550px;
 
 .sci li a {
    text-decoration: none;
-
-    
+   
 }
-
 .sci li a .fa{
   filter: invert(1);
   transform: scale(0.9);

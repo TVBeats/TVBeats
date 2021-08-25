@@ -124,25 +124,26 @@ section{
   border-radius: 2px;
 }
 
-.media-icons{
-	z-index: 888;
-	position: absolute;
-	right: 30px;
-	display: flex;
-	flex-direction: column;
-	transition: 0.5s ease;
-  }
-.main .header .media-icons a{
+.home .media-icons{
+  z-index: 888;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+.home .media-icons a{
   color: #fff;
   font-size: 1.6em;
   transition: 0.3s ease;
 }
 
-.main .header .media-icons a:not(:last-child){
+.home .media-icons a:not(:last-child){
   margin-bottom: 20px;
 }
 
-.main .header .media-icons a:hover{
+.home .media-icons a:hover{
   transform: scale(1.3);
 }
 
