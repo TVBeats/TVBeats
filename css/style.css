@@ -279,15 +279,3 @@ section{
     line-height: 60px;
   }
 }
-      footer
-      {
-        background-color: rgb(34, 30, 30);
-        text-align: left;
-      }
-      footer p
-      {
-        color: white;
-        padding: 20px;
-        font-size: 30px;
-        font-family: 'Dancing Script', cursive;
-      }
