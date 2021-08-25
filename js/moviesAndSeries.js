@@ -70,17 +70,12 @@ window.onload = function () {
 		}
 		cardBoxTable.innerHTML = tableData;
 	}
-	// }
-	//adding cartbox data in table
 }
-let divEl = document.getElementById('alert')
-let btnEl = document.getElementById('confirmBtn')
-btnEl.addEventListener('click', emptyLocalStorage)
-let pEl = document.createElement('p');
-function emptyLocalStorage(event) {
-	divEl.appendChild('pEl');
+
+// When the user clicks the button, open the modal 
+function myFunction () {
+	alert('Thanks for purches from TVBeats')
 	localStorage.clear();
-	pEl.textContent ="Thanks for purches from TVBeats";
 }
 
 
