@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVBEATS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <script>
+    // delet cart
+    function Delete(e) {
+        let items = [];
+        JSON.parse(localStorage.getItem('items')).map(data => {
+            if (data.id != e.parentElement.parentElement.children[0].textContent) {
+
+                items.push(data);
+
+            }
+        });
+        localStorage.setItem('items', JSON.stringify(items));
+        window.location.reload();
+    };
+</script>
+</head>
+
+<body>
+
+  <header>
+    <a href="#" class="brand">TVBEATS</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+
+        <a href="movies.html">Movies</a>
+        <a href="series.html">Series</a>
+        <a href="about_us.html">About Us</a>
+        <div class="iconShopping">
+          <p>0</p>
+          <i class="fa fa-shopping-cart"></i>
+      </div>
+      </div>
+      
+    </div>
+  </header>
+
+  <section class="home">
+    <video class="video-slide active" src="videoForIndex/pexels-tima-miroshnichenko-7984154.mp4" autoplay muted
+      loop></video>
+    <video class="video-slide"
+      src="trailer/Ivar the Boneless and Hvitserk's Emotional Final Battle Together - Vikings - Prime Video.mp4"
+      autoplay muted loop></video>
+    <video class="video-slide" src="trailer/FATHERHOOD.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="trailer/BN.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="trailer/DIEINAGUNFIGHTTrailer(2021).mp4" autoplay muted loop></video>
+    <video class="video-slide" src="trailer/Dune.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="trailer/old.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="trailer/Pig.mp4" autoplay muted loop></video>
+    <video class="video-slide" src="trailer/Trollhunters.mp4" autoplay muted loop></video>
+
+    <div class="content active">
+      <h1>Welcome in<br><span>TVBEATS</span></h1>
+      <p>Our Website is a site for viewing movies and selling movies</p>
+    </div>
+    <div class="content">
+      <h1>Vikings<br><span>Action</span></h1>
+      <p> Vikings transports us to the brutal and mysterious world of Ragnar Lothbrok, a Viking warrior and farmer who
+        yearns to explore - and raid - the distant shores across the ocean.</p>
+      <a href="seriesPages/Vikings.html">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Fatherhood.<br><span>Drama - Comedy</span></h1>
+      <p>A father brings up his baby girl as a single dad after the unexpected death of his wife who died a day after
+        their daughter's birth.</p>
+      <a href="moviesPages/Fatherhood.html">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Breaking News in Yuba County.<br><span>Drama</span></h1>
+      <p>A woman takes advantage of her growing celebrity status when the police and the public think her dead husband
+        is just missing.</p>
+      <a href="moviesPages/ BreakingNewsinYubaCounty.html">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Die in a Gunfight<br><span>Action</span></h1>
+      <p>In New York City, a young guy falls for the daughter of his father's nemesis.</p>
+      <a href="moviesPages/DieInAGunfight.html">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Dune<br><span>Adventure</span></h1>
+      <p>A vacationing family discovers that the secluded beach where they're relaxing for a few hours is somehow
+        causing them to age rapidly, reducing their entire lives into a single day.</p>
+      <a href="moviesPages/Dune.html">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Old<br><span>Thriller</span></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+      <a href="moviesPages/old.html">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Pig<br><span>Drama</span></h1>
+      <p> A truffle hunter who lives alone in the Oregonian wilderness must return to his past in Portland in search of
+        his beloved foraging pig after she is kidnapped.
+      </p>
+      <a href="moviesPages/Pig.html">Read More</a>
+    </div>
+    <div class="content">
+      <h1>Trollhunters<br><span>Animation</span></h1>
+      <p> The heroes from the Trollhunters series team-up on an epic adventure to fight the Arcane Order for control
+        over the magic that binds them all.</p>
+      <a href="moviesPages/Trollhunters.html">Read More</a>
+    </div>
+
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="slider-navigation">
+      <div class="nav-btn active"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+      <div class="nav-btn"></div>
+    </div>
+  </section>
+
+  <div class="cartBox">
+    <div class="cart">
+        <i class="fa fa-close"></i>
+        <h1>Cart</h1>
+        <table>
+
+        </table>
+        <form id="form-for-new-shop">
+            <fieldset>
+                <legend>Cart info</legend>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" name="phoneNumber" id="phoneNumber">
+                <button id="confirmBtn" onclick="myFunction()">Confirm</button>
+            </fieldset>
+    </div>
+</div>
+  <!-- <footer>
+    <p>©TVBEATS TEAM</p>
+  </footer> -->
+  <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function (manual) {
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+  </script>
+  <script src="js/moviesAndSeries.js"></script>
+</body>
+
+</html>
