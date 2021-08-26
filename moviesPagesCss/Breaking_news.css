@@ -79,7 +79,7 @@ div.navigation-items{
     width: 100%;
     min-height:100vh ;
     padding: 0 50px;
-    background:url(/images/Movie/imagesforMovies/Breaking\ News\ in\ Yuba\ County.jpg) ;
+    background:url(../images/Movie/imagesforMovies/Breaking\ News\ in\ Yuba\ County.jpg) ;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -170,7 +170,7 @@ ul.sci{
      left: calc(50% - 250px / 2);
      width: 250px;
      height: 150px;
-     background: url(/images/Movie/Postar/Breaking\ News\ in\ Yuba\ County.jpg);
+     background: url(../images/Movie/Postar/Breaking\ News\ in\ Yuba\ County.jpg);
      background-size:cover;
      cursor: pointer;
      animation: animate 25s linear infinite;

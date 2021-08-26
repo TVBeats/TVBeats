@@ -128,7 +128,7 @@ header .logo img,header .toggle img{
     width: 100%;
     min-height:100vh ;
     padding: 0 50px;
-    background:url(/images/Series/imagesfotSeries/Chernobyl.jpg) ;
+    background:url(../images/Series/imagesfotSeries/Chernobyl.jpg) ;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -220,7 +220,7 @@ ul.sci{
      left: calc(50% - 250px / 2);
      width: 250px;
      height: 150px;
-     background: url(/images/Series/Postar/Chernobyl.jpg);
+     background: url(../images/Series/Postar/Chernobyl.jpg);
      background-size:cover;
      cursor: pointer;
      animation: animate 25s linear infinite;
